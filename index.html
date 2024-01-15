@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Analog clock</title> 
+     </head>
+  <body>
+<div class="register-div" id="register-div">
+  <h3>Registration</h3>
+  <Form >
+    <label for="email">Email</label>
+    <input id="registration-email" type="email">
+    <label  for="password">Password</label>
+    <input id="registration-password" type="password">
+    <label  for="password">Re enter Password</label>
+    <input id="registration-repassword" type="password">
+        <br/>
+
+    <button id="register-btn" class="signin" type="button" >Register</button>
+  </Form>
+</div>
+<div class="login-div" id="login-div"> 
+  <h3>Login</h3>
+  <form>
+  <label for="email">Email</label>
+    <input id="registration-email" type="email">
+   <label  for="password">Password</label>
+    <input id="registration-password" type="password">
+    <br/>
+  <button id="login-btn" class="login" type="button" >Login</button>
+  </form>
+</div>
+
+
+
+    <div id="clock-container" class="clock-container hide">
+            <button class="signout hide" id="signOut" >signOut</button>
+
+
+      <!-- CLOCK 1 -->
+      <div class="clock">
+        <div class="hand hour" id="hour"></div>
+        <div class="hand minute" id="minute"></div>
+        <div class="hand second" id="second"></div>
+
+        <ul class="hours">
+          <li>
+            <span> 1 </span>
+          </li>
+          <li>
+            <span> 2 </span>
+          </li>
+          <li>
+            <span> 3 </span>
+          </li>
+          <li>
+            <span> 4 </span>
+          </li>
+          <li>
+            <span> 5 </span>
+          </li>
+          <li>
+            <span> 6 </span>
+          </li>
+          <li>
+            <span> 7 </span>
+          </li>
+          <li>
+            <span> 8 </span>
+          </li>
+          <li>
+            <span> 9 </span>
+          </li>
+          <li>
+            <span> 10 </span>
+          </li>
+          <li>
+            <span> 11 </span>
+          </li>
+          <li>
+            <span> 12 </span>
+          </li>
+        </ul>
+      </div>
+      <!-- CLOCK 2 -->
+     
+<Img onclick="RevealClock1()" class="icon" id="addicon1" src="/images/plus.svg"></Img>
+
+
+      <div id="clock1" class="hide">
+        <div class="clock">
+          <div class="hand hour" id="hour2"></div>
+          <div class="hand minute" id="minute2"></div>
+          <div class="hand second" id="second2"></div>
+
+          <ul class="hours">
+            <li>
+              <span> 1 </span>
+            </li>
+            <li>
+              <span> 2 </span>
+            </li>
+            <li>
+              <span> 3 </span>
+            </li>
+            <li>
+              <span> 4 </span>
+            </li>
+            <li>
+              <span> 5 </span>
+            </li>
+            <li>
+              <span> 6 </span>
+            </li>
+            <li>
+              <span> 7 </span>
+            </li>
+            <li>
+              <span> 8 </span>
+            </li>
+            <li>
+              <span> 9 </span>
+            </li>
+            <li>
+              <span> 10 </span>
+            </li>
+            <li>
+              <span> 11 </span>
+            </li>
+            <li>
+              <span> 12 </span>
+            </li>
+          </ul>
+        </div>
+
+        <form>
+          <label for="continent"> Continent</label>
+          <input
+            class="queried_continent2"
+            placeholder="Africa1"
+            type="text"
+            id="ert"
+            name="continent"
+          />
+          <label for="continent">Capital</label>
+
+          <input
+            class="queried_capital2"
+            placeholder="Lagos1"
+            type="text"
+            name="city_capital"
+            id="tre"
+          />
+          <button
+            class="btn"
+            id="btn2"
+                        onclick="HandleClick2(event)"
+
+          >
+            Search
+          </button>
+          <Img class="icon" onclick="DeleteClock1()"id="hideicon1" src="/images/delete.svg"></Img>
+          <Img class="icon" id="faveicon1" src="/images/favorite.svg"></Img>
+                    <Img class="icon" id="faveicon11" src="/images/favoritered.svg"></Img>
+
+
+
+        </form>
+      </div>
+      <!-- CLOCK 3 -->
+      <Img onclick="RevealClock2()" class="icon hide" id="addicon2" src="/images/plus.svg"></Img>
+      <div id="clock2" class="hide">
+        <div class="clock">
+          <div class="hand hour" id="hour3"></div>
+          <div class="hand minute" id="minute3"></div>
+          <div class="hand second" id="second3"></div>
+
+          <ul class="hours">
+            <li>
+              <span> 1 </span>
+            </li>
+            <li>
+              <span> 2 </span>
+            </li>
+            <li>
+              <span> 3 </span>
+            </li>
+            <li>
+              <span> 4 </span>
+            </li>
+            <li>
+              <span> 5 </span>
+            </li>
+            <li>
+              <span> 6 </span>
+            </li>
+            <li>
+              <span> 7 </span>
+            </li>
+            <li>
+              <span> 8 </span>
+            </li>
+            <li>
+              <span> 9 </span>
+            </li>
+            <li>
+              <span> 10 </span>
+            </li>
+            <li>
+              <span> 11 </span>
+            </li>
+            <li>
+              <span> 12 </span>
+            </li>
+          </ul>
+        </div>
+
+        <form>
+          <label for="continent"> Continent</label>
+          <input
+            class="queried_continent3"
+            placeholder="Africa"
+            type="text"
+            name="continent"
+          />
+          <label for="continent">Capital</label>
+
+          <input
+            class="queried_capital3"
+            placeholder="Lagos"
+            type="text"
+            name="city_capital"
+          />
+          <button
+            class="btn"
+            onclick="HandleClick3(event)"
+            id="btn3"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+       <Img class="icon" onclick="DeleteClock2()"id="hideicon2" src="/images/delete.svg"></Img>
+
+      </div>
+      <!-- CLOCK 4 -->
+     <Img onclick="RevealClock3()" class="icon hide" id="addicon3" src="/images/plus.svg"></Img>
+      <div id="clock3" class="hide">
+        <div class="clock">
+          <div class="hand hour" id="hour4"></div>
+          <div class="hand minute" id="minute4"></div>
+          <div class="hand second" id="second4"></div>
+
+          <ul class="hours">
+            <li>
+              <span> 1 </span>
+            </li>
+            <li>
+              <span> 2 </span>
+            </li>
+            <li>
+              <span> 3 </span>
+            </li>
+            <li>
+              <span> 4 </span>
+            </li>
+            <li>
+              <span> 5 </span>
+            </li>
+            <li>
+              <span> 6 </span>
+            </li>
+            <li>
+              <span> 7 </span>
+            </li>
+            <li>
+              <span> 8 </span>
+            </li>
+            <li>
+              <span> 9 </span>
+            </li>
+            <li>
+              <span> 10 </span>
+            </li>
+            <li>
+              <span> 11 </span>
+            </li>
+            <li>
+              <span> 12 </span>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <form>
+          <label for="continent"> Continent</label>
+          <input
+            class="queried_continent4"
+            placeholder="Africa"
+            type="text"
+            name="continent"
+          />
+          <label for="continent">Capital</label>
+
+          <input
+            class="queried_capital4"
+            placeholder="Lagos"
+            type="text"
+            name="city_capital"
+          />
+          <button
+            class="btn"
+            onclick="HandleClick4(event)"
+            id="btn4"
+            type="submit"
+          >
+            Search
+          </button>
+        </form><Img class="icon" onclick="DeleteClock3()"id="hideicon3" src="/images/delete.svg"></Img>
+      </div>
+    </div>
+  
+
+  <script type="module">
+   import {initializeApp} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+    import {getAuth, createUserWithEmailAndPassword, onAuthStateChanged,  signOut, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"
+   import {getDatabase, get, ref, child, set, update, remove} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"
+
+    
+ var firebaseConfig = {
+    apiKey: "AIzaSyCIIOZVzavRh2hLRc6epEaT98TPZEx9xyw",
+    authDomain: "analogclock-158e7.firebaseapp.com",
+    projectId: "analogclock-158e7",
+    storageBucket: "analogclock-158e7.appspot.com",
+    messagingSenderId: "844519050478",
+    appId: "1:844519050478:web:859d851f44b9310291f7ff",
+  };
+    const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+ var db = getDatabase(app)
+
+
+document.getElementById("faveicon1").addEventListener("click", writeUserData )
+
+document.getElementById("faveicon11").addEventListener("click", deleteUserData )
+
+
+
+
+
+
+document.querySelector("#register-btn").addEventListener("click", (e)=>{
+e.preventDefault
+const email = document.querySelector("#registration-email").value;
+    const repassword = document.querySelector("#registration-repassword").value;
+    const password = document.querySelector("#registration-password").value;
+
+    if (email.trim() == "") {
+      alert("Enter Email");
+    } else if (password.trim().length < 7) {
+      alert("Password must be at least 7 characters");
+    } else if (password != repassword) {
+      alert("password do not match");
+    } else {
+      createUserWithEmailAndPassword(auth, email, password)
+        .catch(function (error) {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          alert(errorMessage);
+        
+        });
+
+    }
+  
+  })
+
+  onAuthStateChanged(auth, (user) => {
+  if (user) {
+    document.getElementById("clock-container").classList.remove("hide")
+    document.getElementById("signOut").classList.remove("hide")
+    document.getElementById("login-div").classList.add("hide")
+    document.getElementById("register-div").classList.add("hide")
+    uid = user.uid;
+    console.log(uid)
+  } else {
+    document.getElementById("clock-container").classList.add("hide")
+    document.getElementById("signOut").classList.add("hide")
+  }
+});
+
+var continent = ""
+var capital = ""
+var uid = ""
+
+function writeUserData() {
+ continent= document.getElementById("ert").value
+capital = document.getElementById("tre").value
+  set(ref(db, 'users/' + uid ), {
+    continent: continent,
+    capital: capital,
+    id: uid
+  });
+} 
+
+function deleteUserData() {
+  remove(ref(db, 'users/' + uid ));
+} 
+  
+
+
+document.getElementById("login-btn").addEventListener("click", ()=>{
+  const email = document.querySelector("#registration-email").value;
+  const password = document.querySelector("#registration-password").value;
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+  const user = userCredential.user;
+    console.log(user)
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    alert(errorMessage)
+  });})
+
+document.getElementById("signOut").addEventListener("click", ()=>{
+  
+  signOut(auth)
+
+ document.getElementById("login-div").classList.remove("hide")
+    document.getElementById("register-div").classList.remove("hide")
+
+})
+
+
+  
+
+</script>
+<script src="script.js"></script>
+  
+
+  </body>
+  
+
+</html>

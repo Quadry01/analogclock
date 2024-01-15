@@ -1,0 +1,218 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 50px;
+  margin: 0;
+}
+
+.clock {
+  width: 210px;
+  height: 210px;
+  border: 6px solid #333;
+  border-radius: 50%;
+  position: relative;
+  margin: 5px;
+}
+ 
+.hand {
+  position: absolute;
+  transform-origin: 50% 100%;
+  background-color: #333;
+  transition: transform 0.5s cubic-bezier(0.4, 2.6, 0.2, 1);
+}
+
+.hour,
+.hour2,
+.hour3,
+.hour4 {
+  height: 50px;
+  width: 4px;
+  top: 50px;
+  left: 100px;
+}
+
+.minute {
+  height: 70px;
+  width: 2px;
+  top: 30px;
+  left: 100px;
+}
+
+.second {
+  height: 80px;
+  width: 1px;
+  top: 20px;
+  left: 100px;
+  background-color: red;
+}
+ul {
+  list-style: none;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+}
+li {
+  position: absolute;
+  transform-origin: 50% 100%;
+  height: 110px;
+  left: -58px;
+  top: -8px;
+}
+.hours {
+  left: 120px;
+  font-size: 23.3333333333px;
+  letter-spacing: -1.6px;
+  line-height: 45px;
+}
+.hours li {
+  width: 80px;
+}
+.hours span {
+  display: block;
+}
+.hours li:nth-of-type(1) {
+  transform: rotate(30deg);
+}
+.hours li:nth-of-type(1) span {
+  transform: rotate(-30deg);
+}
+.hours li:nth-of-type(2) {
+  transform: rotate(60deg);
+}
+.hours li:nth-of-type(2) span {
+  transform: rotate(-60deg);
+}
+.hours li:nth-of-type(3) {
+  transform: rotate(90deg);
+}
+.hours li:nth-of-type(3) span {
+  transform: rotate(-90deg);
+}
+.hours li:nth-of-type(4) {
+  transform: rotate(120deg);
+}
+.hours li:nth-of-type(4) span {
+  transform: rotate(-120deg);
+}
+.hours li:nth-of-type(5) {
+  transform: rotate(150deg);
+}
+.hours li:nth-of-type(5) span {
+  transform: rotate(-150deg);
+}
+.hours li:nth-of-type(6) {
+  transform: rotate(180deg);
+}
+.hours li:nth-of-type(6) span {
+  transform: rotate(-180deg);
+}
+
+.hours li:nth-of-type(7) {
+  transform: rotate(210deg);
+}
+.hours li:nth-of-type(7) span {
+  transform: rotate(-210deg);
+}
+.hours li:nth-of-type(8) {
+  transform: rotate(240deg);
+}
+.hours li:nth-of-type(8) span {
+  transform: rotate(-240deg);
+}
+
+.hours li:nth-of-type(9) {
+  transform: rotate(270deg);
+}
+.hours li:nth-of-type(9) span {
+  transform: rotate(-270deg);
+}
+.hours li:nth-of-type(10) {
+  transform: rotate(300deg);
+}
+.hours li:nth-of-type(10) span {
+  transform: rotate(-300deg);
+}
+
+.hours li:nth-of-type(11) {
+  transform: rotate(330deg);
+}
+.hours li:nth-of-type(11) span {
+  transform: rotate(-330deg);
+}
+.hours li:nth-of-type(12) {
+  transform: rotate(360deg);
+}
+.hours li:nth-of-type(12) span {
+  transform: rotate(-360deg);
+}
+.queried_continent4,
+.queried_capital4,
+.queried_continent2,
+.queried_capital2,
+.queried_continent3,
+.queried_capital3 {
+  display: block;
+  width: 200px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.form-containe {
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.btn {
+  padding: 5px;
+  width: 70px;
+  cursor: pointer;
+}
+.clock-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.register-div{
+
+  width: 300px;
+  margin-top: 50px;
+}
+
+ .login-div{
+border-left: 2px solid;
+padding-left: 10%;
+  width: 300px;
+    margin-top: 50px;
+
+}
+
+.register-div > *,.login-div > * {
+margin: 4px;
+  display: block;
+}
+
+label{display: block;}
+input{
+  margin: 5px 0px;
+}
+.signout{
+
+  position: relative;
+  top: 10px;
+  height: 50px;
+}
+
