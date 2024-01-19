@@ -338,7 +338,7 @@
     appId: "1:844519050478:web:859d851f44b9310291f7ff",
   };
     const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
+const auth = getAuth(app);
  var db = getDatabase(app)
 
 
@@ -383,7 +383,6 @@ const email = document.querySelector("#registration-email").value;
     document.getElementById("login-div").classList.add("hide")
     document.getElementById("register-div").classList.add("hide")
     uid = user.uid;
-    console.log(uid)
   } else {
     document.getElementById("clock-container").classList.add("hide")
     document.getElementById("signOut").classList.add("hide")
@@ -405,9 +404,15 @@ capital = document.getElementById("tre").value
 } 
 
 function deleteUserData() {
-  remove(ref(db, 'users/' + uid ));
+  // remove(ref(db, 'users/' + uid ));
+  readData()
 } 
-  
+  function readData(){
+var dbRef = ref(db)
+get(child(dbRef, 'users/' + uid)).then((snapshot)=>{
+console.log(snapshot.val())
+})}
+
 
 
 document.getElementById("login-btn").addEventListener("click", ()=>{

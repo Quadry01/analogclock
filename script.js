@@ -20,11 +20,11 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 
-var queriedHour = 0;
-var queriedMinute = 0;
-var queriedsecond = 0;
-var queriedContinent = "";
-var queriedCapital = "";
+var queriedHour = null;
+var queriedMinute = null;
+var queriedsecond = null;
+var queriedContinent = null;
+var queriedCapital = null;
 var indianTime = null;
 
 function HandleClick2(event) {
@@ -110,7 +110,12 @@ function newClock2() {
   minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
   secondHand.style.transform = `rotate(${secondDeg}deg)`;
 }
-setInterval(newClock2, 1000);
+
+
+  setInterval(newClock2, 1000);
+
+
+
 
 function newClock3() {
   indianTime = new Date().toLocaleTimeString("en-US", {
